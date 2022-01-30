@@ -1,0 +1,450 @@
+/*############ defult css ############*/
+
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+
+ul{
+    padding: 0;
+    margin: 0
+}
+ul li{
+    list-style: none;
+}
+input:focus{
+    box-shadow: none;
+}
+
+body{
+    font-family: 'Murecho', sans-serif;
+}
+.bg-color{
+    background-color: #F8F8F8;
+}
+.container{
+    max-width: 1200px;
+    margin: auto;
+}
+.max-container{
+    max-width: 1080px;
+    margin: auto;
+}
+.text-left{
+    text-align: left;
+}
+.text-center{
+    text-align: center;
+}
+.text-right{
+    text-align: right;
+}
+.clear-fix::after{
+    content: "";
+    clear: both;
+    display: block;
+}
+.flot-left{
+    float: left;
+}
+.flot-right{
+    float: right;
+}
+
+
+/*############ defult css end ############*/
+/*############ header area start ############*/
+.header {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 5px 0px 2px;
+    z-index: 2;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    padding: 0;
+    margin: 0;
+}
+.header-logo{
+    width: 30%;
+}
+.header-menu{
+    width: 70%;
+}
+.header-logo img {
+    width: 82%;
+    height: 54px;
+    margin-left: -44px;
+    margin-top: 6px;
+}
+.header-logo span {
+    color: #010101;
+    font-size: 26px;
+    margin-left: 7px;
+    display: inline-block;
+    font-weight: 500;
+    margin-top: 5px;
+    transition: .5s;
+}
+.main-menu ul li {
+    display: inline-block;
+    margin-left: -4px;
+    position: relative;
+}
+.main-menu ul li span {
+    font-size: 17px;
+    margin-left: 2px;
+}
+.main-menu ul li a {
+    display: block;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 65px;
+    padding: 0 15px;
+    color: #fff;
+    transition: .5s;
+    position: relative;
+}
+.active{
+    color: #C69453 !important;
+}
+.main-menu ul li a::after {
+    content: "";
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+    width: 80%;
+    height: 2px;
+    background-color: #C69453;
+    transition: .5s;
+    transform: scaleX(0);
+}
+.main-menu ul li a:hover::after{
+    transform: scaleX(1);
+}
+.main-menu ul li a:hover{
+    color: #C69453;
+}
+
+/* drow dow menu design  */
+.main-menu ul li{
+    position: relative;
+}
+.main-menu ul li ul{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    padding: 0;
+    width: 200px;
+    visibility: hidden;
+    opacity: 0;
+    transition: .5s;
+    text-align: center;
+    transform: scaleY(0);
+    transform-origin: bottom top;
+
+}
+.main-menu ul li:hover > ul{
+   visibility: visible;
+   opacity: 1;
+   transform: scaleY(1);
+  
+}
+.main-menu ul li ul li{
+    display: block !important;
+    margin-left: 0;
+}
+.main-menu ul li ul a {
+    color: #101010d0;
+    line-height: 55px;
+}
+.main-menu ul li ul a:hover{
+    color: #C69453;
+    background-color: #C2C1C2;
+}
+.main-menu ul li ul a:hover::after{
+    transform: scaleX(0);
+}
+/* drow dow menu design  end*/
+.header-button a {
+    display: inline-block;
+    border: 2px solid #6278DF;
+    padding: 9px 27px;
+    border-radius: 9px;
+    font-weight: 600;
+    background: none;
+    color: #fff;
+    transition: .5s;
+    margin-top: 2px;
+}
+.header-button a:hover{
+    background-color: #6278df;
+    color: #fff;
+    box-shadow: 3px 4px 38px 0px rgba(98, 120, 223, .2);
+}
+
+
+/*############ banner area start ############*/
+.banner {
+    background: url("./img/banner.jpg") center center no-repeat;
+    background-size: cover;
+    padding: 222px 0px;
+    color: rgb(255, 255, 255);
+    z-index: 1;
+    position: relative;
+}
+.banner::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    background-color: rgba(0, 0, 0, 0.7);
+    height: 100%;
+    width: 100%;
+}
+
+
+.banner h1 {
+    font-size: 86px;
+    font-weight: 600;
+    margin: 11px 0 20PX;
+}
+.banner h4 {
+    font-size: 35px;
+    font-weight: 400;
+    margin-bottom: 42px;
+    position: relative;
+}
+.banner h4::after{
+    content: "";
+    width: 71px;
+    height: 1px;
+    background-color: #ddd;
+    position: absolute;
+    left: 314px;
+    top: 30px;
+}
+.banner h4::before {
+    content: "";
+    width: 71px;
+    height: 1px;
+    background-color: #ddd;
+    position: absolute;
+    right: 314px;
+    top: 30px;
+}
+.dufolt-btn {
+    padding: 14px 42px;
+    display: inline-block;
+    font-size: 13px;
+    background-color: #C69453;
+    border-color: 1px solid #fcfcfc;
+    color: #fff;
+    font-weight: 300;
+    border-radius: 21px;
+    transition: .5s;
+    box-sizing: border-box;
+}
+.dufolt-btn {
+    padding: 14px 42px;
+    display: inline-block;
+    font-size: 13px;
+    background-color: #C69453;
+    border-color: 1px solid #fcfcfc;
+    color: #fff;
+    font-weight: 400;
+    border-radius: 21px;
+    transition: .5s;
+    box-sizing: border-box;
+    transition: .5s;
+}
+.dufolt-btn:hover{
+    color: #C69453;
+    background-color: #fff;
+}
+/*############ banner area end ############*/
+/*############ services area start ############*/
+.services{
+    padding: 75px 0;
+}
+.services-items{}
+.item-1{
+    width: 23.33%;
+    margin-right: 2%;
+    background-color: #fff;
+    box-sizing: border-box;
+    padding: 35px 20px;
+    transition: .5s;
+}
+.item-1 img{
+    transition: .8s;
+}
+
+.item-1:last-child{
+    margin-right: 0;
+}
+.item-1 h2{
+    font-weight: 500;
+    font-size: 18px;
+    color: #212529;
+    padding: 26px 0 14px;
+}
+.item-1 p{
+    color: #555555;
+}
+
+.item-1 a {
+    color: #fff;
+    background: #C69453;
+    padding: 5px 18px;
+    display: inline-block;
+    border-radius: 6px;
+    margin-top: 35px;
+    transition: .5s;
+}
+.item-1:hover{
+    background-color: #ddd;
+}
+.item-1:hover.item-1 img{
+    transform: rotateY(360deg);
+}
+.item-1:hover.item-1 a{
+    color:  #C69453;
+    background-color: #fff;
+}
+.item-1 a:hover{
+    color: #FFF !important;
+    background-color: #000 !important;
+    transform: translateY(10px);
+}
+
+/*############ services area end ############*/
+/*############ about area end ############*/
+.about-us {
+    padding: 164px 0 70px;
+}
+.about-right{
+    width: 50%;
+}
+.about-left{
+    width: 50%;
+}
+.about-left h1 {
+    font-size: 39px;
+    font-weight: 500;
+    margin-bottom: 28px;
+    color: #212529;
+}
+.about-left span {
+    color: #C69453;
+}
+.about-left summary {
+    font-size: 15px;
+}
+.about-left p {
+    margin-bottom: 30px;
+    color: #444444;
+    font-size: 14px;
+}
+.about-left a {
+    color: #fff;
+    background: #000;
+    display: inline-block;
+    padding: 9px 19px;
+    margin-top: 22px;
+    transition: .5s;
+}
+.about-left a:hover{
+    background-color: #C69453;
+    color: #fff;
+}
+/*############ about area end ############*/
+/*############ contact area start ############*/
+.content-right-form{
+    width: 50%;
+}
+.content-left-form{
+    width: 48%;
+}
+.contact-form{
+    margin-top: 60px;
+}
+.contact-form input{
+    margin-bottom: 20px;
+}
+.contact-form .w-100{
+    width: 100%;
+}
+.contact-form .w-50{
+    width: 48%;
+}
+.contact-form button {
+    color: rgb(255, 255, 255);
+    background: #C69453;
+    display: inline-block;
+    padding: 17px 32px;
+    margin-top: 22px;
+    border: none;
+}
+.content-left-form h4 {
+    font-size: 39px;
+    font-weight: 500;
+    margin-bottom: 28px;
+    color: #212529;
+}
+.content-left-form p {
+    margin-bottom: -17px;
+    color: #444444;
+    font-size: 14px;
+}
+
+.main-input {
+    color: rgb(35, 35, 35);
+    padding: 16px 15px;
+    margin: 0px;
+    box-shadow: rgb(98 120 223 / 8%) 0px 1px 7px 1px;
+    font-size: 14PX;
+    border: 1px solid rgb(221, 221, 221);
+    transition: all 0.5s ease 0s;
+    box-sizing: border-box;
+}
+.content-right-form img {
+    position: relative;
+    left: 196px;
+    bottom: -5px;
+}
+/*############ contact area end ############*/
+/* footer area start here */
+.footer-area {
+    background-color: #6D6D6D;
+    padding: 42px 0;
+    color: #fff;
+}
+
+.footer-left{
+    width: 50%;
+}
+.footer-left p {
+    font-size: 15px;
+    color: #ddd;
+}
+
+.footer-right{
+    width: 50%;
+}
+.footer-right ul{
+    text-align: right;
+}
+.footer-right ul li{
+    display: inline-block;
+}
+.footer-right ul li a{
+    color: #ddd;
+    margin-right: 25px;
+}
+/* footer area end here */
