@@ -365,6 +365,9 @@ body{
 }
 /*############ about area end ############*/
 /*############ contact area start ############*/
+.contact {
+    padding-top: 75px;
+}
 .content-right-form{
     width: 50%;
 }
@@ -372,10 +375,10 @@ body{
     width: 48%;
 }
 .contact-form{
-    margin-top: 60px;
+    
 }
-.contact-form input{
-    margin-bottom: 20px;
+.contact-form input {
+    margin-bottom: 8px;
 }
 .contact-form .w-100{
     width: 100%;
@@ -388,17 +391,17 @@ body{
     background: #C69453;
     display: inline-block;
     padding: 17px 32px;
-    margin-top: 22px;
+    margin-top: 19px;
     border: none;
 }
 .content-left-form h4 {
     font-size: 39px;
     font-weight: 500;
-    margin-bottom: 28px;
+    margin-bottom: 26px;
     color: #212529;
 }
 .content-left-form p {
-    margin-bottom: -17px;
+    margin-bottom: 26px;
     color: #444444;
     font-size: 14px;
 }
@@ -408,8 +411,8 @@ body{
     padding: 16px 15px;
     margin: 0px;
     box-shadow: rgb(98 120 223 / 8%) 0px 1px 7px 1px;
-    font-size: 14PX;
-    border: 1px solid rgb(221, 221, 221);
+    font-size: 16PX;
+    border: 1px solid rgba(221, 221, 221, 0.205);
     transition: all 0.5s ease 0s;
     box-sizing: border-box;
 }
